@@ -1,7 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import java.text.*;
 
 public class ClickGame
 {
@@ -119,7 +118,6 @@ class ClickGamePanel extends JPanel
     setLayout(new GridBagLayout());
     setBackground(Color.red);
     
-    DecimalFormat dFormat = new DecimalFormat("#.##");
 
     GridBagConstraints c = new GridBagConstraints();
 

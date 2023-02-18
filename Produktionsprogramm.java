@@ -13,9 +13,9 @@ public class Produktionsprogramm {
   String ausgabe;
   String stern; 
   double varKosten; 
-  
+  static Scanner sc = new Scanner(System.in);
   public void eingabe (){
-     Scanner sc = new Scanner(System.in);
+    
     //Scanner sc3 = new Scanner(System.in);
     do {
       System.out.println("Bitte geben Sie den Verkaufspreis an."); 
@@ -100,7 +100,6 @@ public class Produktionsprogramm {
 
   public static void main (String [] args) {
     Produktionsprogramm pp = new Produktionsprogramm();
-    Scanner sc2 = new Scanner(System.in);
     char wahl; 
     System.out.print("\n\n");
     System.out.println("\t*****************************************************");
@@ -114,7 +113,7 @@ public class Produktionsprogramm {
     pp.verarbeitung();
     pp.ausgabe();
     System.out.print("\n\tMoechten Sie eine neue Berechnung durchfuehren(J/N)? " );
-    wahl = sc2.next().charAt(0); 
+    wahl = sc.next().charAt(0); 
     } while (wahl == 'j' || wahl == 'J'); // end of do-while
     
   }
