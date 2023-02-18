@@ -21,6 +21,8 @@ public class AbzahlungsDarlehen {
     
     DecimalFormat formatter = new DecimalFormat("#,###.00");
 
+    static Scanner sc = new Scanner(System.in);
+
     public void title()
     {
 
@@ -29,7 +31,7 @@ public class AbzahlungsDarlehen {
     public void eingabe()
     {
 
-        Scanner sc = new Scanner(System.in);
+        
 
         System.out.print("\n  Bitte geben Sie den Kreditbetrag ein: ");
         kreditbetrag = sc.nextInt();
@@ -78,7 +80,7 @@ public class AbzahlungsDarlehen {
 
     public static void main(String[] args){
 
-        Scanner sc1 = new Scanner(System.in);
+        
 
         AbzahlungsDarlehen abzahlungsdarlehen = new AbzahlungsDarlehen();
 
@@ -92,7 +94,7 @@ public class AbzahlungsDarlehen {
             abzahlungsdarlehen.ausgabe();
         
             System.out.print("\nMöchten Sie eine neue Berechungung durchführen? (J/N) ?");
-            repeat = sc1.next().charAt(0);
+            repeat = sc.next().charAt(0);
 
         }
 
