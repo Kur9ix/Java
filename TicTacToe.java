@@ -6,7 +6,7 @@ public class TicTacToe{
 
     char[][] spielFeld = new char[3][3];
     static Scanner sc = new Scanner(System.in);
-    static char spielerzeichen = 'o';
+    static char spielerzeichen = 'O';
     String auswertung;
     int spieler  = 2;
 
@@ -29,11 +29,11 @@ public class TicTacToe{
     {
         int x;
         int y;
-        if(spielerzeichen == 'x'){
-            spielerzeichen = 'o';
+        if(spielerzeichen == 'X'){
+            spielerzeichen = 'O';
             spieler++;
         }else{
-            spielerzeichen = 'x';
+            spielerzeichen = 'X';
             spieler--;
         }
         
