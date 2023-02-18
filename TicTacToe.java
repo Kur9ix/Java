@@ -37,14 +37,14 @@ public class TicTacToe{
             spieler--;
         }
         
-            
+        System.out.println(" ");   
         System.out.print("Spieler "+ spieler + " <-"+ spielerzeichen +">: \n");
         System.out.print("Eingabe Koordinate x <0-2>: ");
         x = sc.nextInt();
         System.out.print("Eingabe Koordinate y <0-2>: ");
         y = sc.nextInt();
         spielFeld[x][y] = spielerzeichen;
-             
+        System.out.println(" ");        
            
         
     } 
@@ -83,7 +83,7 @@ public class TicTacToe{
                 }
             }
         }
-        
+
     }
     public static void main(String[] args) {
         TicTacToe ticTacToe = new TicTacToe();
