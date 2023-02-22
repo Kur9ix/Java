@@ -31,8 +31,7 @@ public class PlanetenQuiz {
         for(int i = 1; i < planetenanzahl; i++){
 
             System.out.print(i + ". Planet: ");
-            eingabe = sc.next();
-            
+            eingabe = sc.next();           
             planeteneingabe[i] = eingabe;
         }
         

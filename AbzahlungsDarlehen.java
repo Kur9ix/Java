@@ -65,8 +65,12 @@ public class AbzahlungsDarlehen {
             temp_zinsen = (anfangskapital / 100) * zinssatz;
             temp_annuitaet = temp_tilgung + temp_zinsen;
             restkapital = anfangskapital - temp_tilgung;
-            System.out.print("\n  " + jahr); System.out.print(" \t\t"+formatter.format(anfangskapital)); System.out.print("\t" + formatter.format(temp_zinsen)); System.out.print("\t" + formatter.format(temp_tilgung)); System.out.print("\t" + formatter.format(temp_annuitaet)); System.out.print("\t" + formatter.format(restkapital));
-           
+            System.out.print("\n  " + jahr); 
+            System.out.print("\t\t " + anfangskapital);
+            System.out.print("\t\t" + zinsen);
+            System.out.print("\t"+ tilgung);
+            System.out.print("\t" + annuitaet);
+            System.out.print("\t\t" + restkapital);
             anfangskapital = anfangskapital - temp_tilgung;
             tilgung = temp_tilgung*kredit_laufzeit;
             annuitaet += temp_annuitaet;
