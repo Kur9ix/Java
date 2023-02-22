@@ -22,7 +22,7 @@ public class Grundrechenarten {
         Zahl1 =sc1.nextInt();
         System.out.print("Bitte geben Sie die 2. Zahl ein: ");
         Zahl2 =sc1.nextInt();
-        System.out.print("\nAuswahL: \n");
+        System.out.print("\nAuswahl: \n");
         System.out.print("------------------------------------------------\n");
         System.out.print("Welche Grundrechenart möchten Sie auswählen\n");
         System.out.print("1. Addition\n");

@@ -53,7 +53,7 @@ public class KennwortEingabe {
 
 
     public void ausgabe(){
-        System.out.print("\nSie haben sich erflogreich angemldet!");
+        System.out.print("\nSie haben sich erfolgreich angemldet!");
     }
 
     public static void main(String[] args) {

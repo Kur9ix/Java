@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class AdditionZahlen{
+public class BerechnungNotendurchschnitt{
   
        double note1;
        double note2;
@@ -16,18 +16,18 @@ public class AdditionZahlen{
   
       Scanner sc =new Scanner(System.in);
       
-      System.out.println("\n\tNoteneingabe:\n\t---------------------");
-      System.out.print("\tBitte geben Sie die Anzahl der Note 1 ein:");
+      System.out.println("\nNoteneingabe:");
+      System.out.print("Bitte geben Sie die Anzahl der Note 1 ein: ");
       note1 = sc.nextDouble();
-      System.out.print("\tBitte geben Sie die Anzahl der Note 2 ein:");
+      System.out.print("Bitte geben Sie die Anzahl der Note 2 ein: ");
       note2 =sc.nextDouble();
-      System.out.print("\tBitte geben Sie die Anzahl der Note 3 ein:");
+      System.out.print("Bitte geben Sie die Anzahl der Note 3 ein: ");
       note3 = sc.nextDouble();
-      System.out.print("\tBitte geben Sie die Anzahl der Note 4 ein:");
+      System.out.print("Bitte geben Sie die Anzahl der Note 4 ein: ");
       note4 =sc.nextDouble();
-      System.out.print("\tBitte geben Sie die Anzahl der Note 5 ein:");
+      System.out.print("Bitte geben Sie die Anzahl der Note 5 ein: ");
       note5 =sc.nextDouble();
-      System.out.print("\tBitte geben Sie die Anzahl der Note 6 ein:");
+      System.out.print("Bitte geben Sie die Anzahl der Note 6 ein: ");
       note6 =sc.nextDouble();
       System.out.println("\n");  
       sc.close(); 
@@ -57,15 +57,14 @@ public class AdditionZahlen{
      }
   
      public static void main(String[] args) {
-     AdditionZahlen az1;
-     az1 = new AdditionZahlen();
-     System.out.println("\n\t*********************************\n");
-     System.out.println("\t\tBerechnung Notendurchschnitt");
-     System.out.println("\n\t********************************\n");
+     BerechnungNotendurchschnitt bNotendurchschnitt = new BerechnungNotendurchschnitt();
+     System.out.print("\n**********************************************\n");
+     System.out.print("\tBerechnung Notendurchschnitt");
+     System.out.print("\n**********************************************\n");
     
-     az1.eingabe();
-     az1.verarbeitung();
-     az1.ausgabe();
+     bNotendurchschnitt.eingabe();
+     bNotendurchschnitt.verarbeitung();
+     bNotendurchschnitt.ausgabe();
                  
      }
       

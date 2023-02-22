@@ -46,15 +46,15 @@ public class ZufallsZahl {
                     
                 }
                 if(zahl_eingabe >= 11){
-                    System.out.print("\nFalsche Eingabe! Wiederholen sie die eingabe\n");
+                    System.out.print("Falsche Eingabe! Wiederholen sie die eingabe\n");
                 }
                 else{
                     
                     if(zahl_eingabe < random_zahl){
-                        abstand = "\nDie Zahl ist zu niedrig.";
+                        abstand = "Die Zahl ist zu niedrig.";
                     }
                     else if(zahl_eingabe > random_zahl){
-                        abstand = "\nDie Zahl ist zu hoch!";
+                        abstand = "Die Zahl ist zu hoch!";
                     }
                     versuche --;
                     System.out.print(abstand +" Sie haben noch "+ versuche + " Versuche.\n");
@@ -65,7 +65,7 @@ public class ZufallsZahl {
         }while (schleife == true );
     }
     public void ausgabe(){
-        System.out.print("\nSie haben nach " + versuchen + " Versuchen  Gewonnen!");
+        System.out.print("\nSie haben nach " + versuchen + " Versuchen gewonnen!");
     }
 
     public static void main(String[] args) {

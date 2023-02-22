@@ -16,11 +16,11 @@ public class Körpergröße {
     public void eingabe(){
 
         Scanner sc1 = new Scanner(System.in);
-        System.out.print("\n\tWie lang sind Ihre Oberschenkel (in m)? ");
+        System.out.print("\nWie lang sind Ihre Oberschenkel (in m)? ");
         Oberschenkel =sc1.nextDouble();
-        System.out.print("\tWie alt sind Sie? ");
+        System.out.print("Wie alt sind Sie? ");
         Alter = sc1.nextInt();
-        System.out.print("\tSind sie männlich (1) oder weiblich (2)? ");
+        System.out.print("Sind sie männlich (1) oder weiblich (2)? ");
         Geschlechte =sc1.nextInt();
         sc1.close();
 
@@ -49,8 +49,12 @@ public class Körpergröße {
     }
 
     public void ausgabe(){
-        System.out.print("\n\tSie sind "+ Alter + " alt, " +Geschlecht + " und haben \neine Oberschenkellänge von " + Oberschenkel+".");
-        System.out.print("\n\tWahrscheinlich sind Sie "+formatter.format(Größe)+" m groß");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.print("Auswertung:");
+        System.out.print("\nSie sind "+ Alter + " alt, " +Geschlecht + " und haben \neine Oberschenkellänge von " + Oberschenkel+".");
+        System.out.println(" ");
+        System.out.print("\nWahrscheinlich sind Sie "+formatter.format(Größe)+" m groß");
     }
 
     public static void main(String[] args) {

@@ -9,10 +9,9 @@ public class Mittelwert
   double zahlen;
   double temp;
   double mittelwert;
-  String platzhalter;
-  String zwischnespeicher;
+  String zwischnespeicher = "\n";
   
-  
+  static Scanner sc = new Scanner(System.in);
   DecimalFormat formatter = new DecimalFormat("#.##");
   
   public void titel()
@@ -25,16 +24,15 @@ public class Mittelwert
   
   public void eingabe()
   {
-    Scanner sc1 = new Scanner(System.in);
+   
     while(janein.equals("j"))
     {
       System.out.print("Bitte geben Sie die "+ zahl +".Zahl ein: ");
-      zahlen =sc1.nextInt();
-      //zwischnespeicher = zahlen +"," +zahlen ;
-      //System.out.println(zwischnespeicher);
+      zahlen =sc.nextInt();
+      zwischnespeicher += zahl + ". Zahl: " + zahlen + "\n";
       temp += zahlen;
       System.out.print("Möchten Sie eine weitere Zahl eingeben (j, n)? ");
-      janein = sc1.next();
+      janein = sc.next();
       if (janein.equals("n")) {
         verarbeitung();
         ausgabe();
@@ -42,7 +40,7 @@ public class Mittelwert
       
       zahl++;
     }
-    sc1.close();
+   
     
   }
   
@@ -55,30 +53,29 @@ public class Mittelwert
   public void ausgabe()
   {
     
-    System.out.print("\nDer Mittelwert von den Zahlen:\n");
-    for (int i = 1; i < zahl + 1; i++)
-    {
-      System.out.print("\n"+i+". Zahl: "+ platzhalter);
-    }
-    System.out.print("\n\nbeträgt:" + formatter.format(mittelwert)+".\n");
+    System.out.print("Der Mittelwert von den Zahlen:");
+    System.out.print(zwischnespeicher);
     
+    System.out.print("beträgt: " + formatter.format(mittelwert));
   }
   
   public static void main(String[] args)
   {
     Mittelwert mw1 = new Mittelwert();
-    char repeat = 'J';
-    Scanner sc2 = new Scanner(System.in);
-    do
-    {
-      mw1.titel();  System.out.print("Test");
-      mw1.eingabe();   System.out.print("Test");
-      mw1.verarbeitung();   System.out.print("Test");
-      mw1.ausgabe();    System.out.print("Test");
-      System.out.print("\nMöchten Sie eine neue Berechnung durchführen (J/N)? ");
-      repeat =sc2.next().charAt(0);
-    } while (repeat == 'J');   
-    sc2.close();  
+    
+    
+    mw1.titel(); 
+    char wiederholung = 'j';
+
+    do{
+        mw1.eingabe();
+        mw1.verarbeitung();
+        mw1.ausgabe();
+
+        System.out.print("Möchten sie eine neue Berechnung durchführen? (j/n) ? ");
+        wiederholung = sc.next().charAt(0);
+    }while(wiederholung == 'J' || wiederholung == 'j');
+      
   }
   
   

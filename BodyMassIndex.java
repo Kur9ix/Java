@@ -14,6 +14,7 @@ public class BodyMassIndex{
     public void eingabe(){
         Scanner sc1 = new Scanner(System.in);
 
+        System.out.println(" ");
         System.out.print("Bitte gebn Sie ihr Gewicht (in Kh) ein: ");
         Gewicht =sc1.nextInt();
         System.out.print("Bitte geben Sie ihre Körpergröße (in m) ein: ");
@@ -39,8 +40,9 @@ public class BodyMassIndex{
     }
 
     public void ausgabe(){
+        System.out.println(" ");
         System.out.print("Ihr Body-Mass-Index (BMI) beträgt: "+formatter.format(BMI));
-        System.out.print(" Sie haben "+Gewichtsangabe +"!");
+        System.out.print("\nSie haben "+Gewichtsangabe +"!");
     }   
 
     public static void main(String[] args) {

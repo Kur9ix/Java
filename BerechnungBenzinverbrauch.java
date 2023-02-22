@@ -1,7 +1,7 @@
 import java.util.*;
 import java.text.*;
 
-public class Benzinverbrauch {
+public class BerechnungBenzinverbrauch {
    
     int kilometerstand;
     int lastKilometerstand;
@@ -41,16 +41,14 @@ public class Benzinverbrauch {
 
     public static void main(String[]args){
 
-        Benzinverbrauch bz1;
-        bz1 = new Benzinverbrauch();
-    
+        BerechnungBenzinverbrauch berechnungBenzinverbrauch = new BerechnungBenzinverbrauch();
         System.out.print("\n\t****************************************************************\n");
         System.out.print("\t\t\t Berechnung Benzinverbrauch");
         System.out.print("\n\t****************************************************************\n");
 
-        bz1.eingabe();
-        bz1.verarbeitung();
-        bz1.ausgabe();
+        berechnungBenzinverbrauch.eingabe();
+        berechnungBenzinverbrauch.verarbeitung();
+        berechnungBenzinverbrauch.ausgabe();
         
     }
 

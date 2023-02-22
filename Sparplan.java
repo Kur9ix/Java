@@ -21,18 +21,18 @@ public class Sparplan {
 
     public void titel()
     {
-        System.out.print("\t*************************************************\n");
-        System.out.print("\t\t\t Sparplan\n");
-        System.out.print("\t*************************************************\n");
+        System.out.print("*************************************************\n");
+        System.out.print("\t\t Sparplan\n");
+        System.out.print("*************************************************\n");
     }
 
     public void eingabe()
     {
-        System.out.print("\tBitte geben Sie ihr Kapital ein: ");
+        System.out.print("Bitte geben Sie ihr Kapital ein: ");
         kapital = sc.nextDouble();
-        System.out.print("\tBitte geben Sie den Zinssatz ein: ");
+        System.out.print("Bitte geben Sie den Zinssatz ein: ");
         zinssatz = sc.nextDouble();
-        System.out.print("\tBitte geben SIe die Anlagedauer (in Jahren) ein: ");
+        System.out.print("Bitte geben SIe die Anlagedauer (in Jahren) ein: ");
         anlagedauer = sc.nextInt();
     }
 
@@ -55,12 +55,14 @@ public class Sparplan {
 
     public void ausgabe()
     {   
-        System.out.print("\n\tStartkapital : "+ kapital +" Euro");
-        System.out.print("\n\tZinssatz: "+ zinssatz + "%");
-        System.out.print("\n\tAnlagerdauer: "+ anlagedauer +" Jahre");
-        System.out.print("\n\tZinsen: "+ dc1.format(zinsen) + " Euro");
-        System.out.print("\n\tEndkapital: " + dc1.format(endkapital) + " Euro");
-        System.out.print("\n\n\tMöchten Sie eine neue Berechnung druchführen (j/n)");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.print("\nStartkapital : "+ kapital +" Euro");
+        System.out.print("\nZinssatz: "+ zinssatz + "%");
+        System.out.print("\nAnlagerdauer: "+ anlagedauer +" Jahre");
+        System.out.print("\nZinsen: "+ dc1.format(zinsen) + " Euro");
+        System.out.print("\nEndkapital: " + dc1.format(endkapital) + " Euro");
+        System.out.print("\n\nMöchten Sie eine neue Berechnung druchführen (j/n)");
         repeat = sc.next();
         if(repeat.equals("J") || repeat.equals("j"))
         {

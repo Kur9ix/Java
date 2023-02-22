@@ -43,6 +43,7 @@ public class KleinsteZahl{
   
   public void ausgabe(){
 
+        System.out.print("Auswertung: ");
         System.out.print("\n\tDie Kleinste Zahl von den Zahlen: " );
         System.out.print("\n\tZahl 1: " + Zahl1);
         System.out.print("\n\tZahl 2: " + Zahl2);

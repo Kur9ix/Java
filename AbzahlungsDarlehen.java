@@ -3,6 +3,8 @@ import java.text.*;
 
 public class AbzahlungsDarlehen {
     
+
+    //Still need work
     int kreditbetrag;
     int zinssatz;
     int kredit_laufzeit;
@@ -25,7 +27,9 @@ public class AbzahlungsDarlehen {
 
     public void title()
     {
-
+        System.out.print("**********************************************************************\n");
+        System.out.print("\t\t\tAbzahlungsdarlehen\n");
+        System.out.print("**********************************************************************\n");
     }
 
     public void eingabe()
@@ -33,11 +37,11 @@ public class AbzahlungsDarlehen {
 
         
 
-        System.out.print("\n  Bitte geben Sie den Kreditbetrag ein: ");
+        System.out.print("Bitte geben Sie den Kreditbetrag ein: ");
         kreditbetrag = sc.nextInt();
-        System.out.print("\n  Bitte geben SIe den Zinssatz ein: ");
+        System.out.print("Bitte geben SIe den Zinssatz ein: ");
         zinssatz = sc.nextInt();
-        System.out.print("\n  Bitte geben Sie die Kreditlaufzeit (in Jahren ) ein: ");
+        System.out.print("Bitte geben Sie die Kreditlaufzeit (in Jahren ) ein: ");
         kredit_laufzeit = sc.nextInt();
 
     }
@@ -45,11 +49,11 @@ public class AbzahlungsDarlehen {
     public void verarbeitung()
     {
 
-        System.out.print("\n  Kreditbetrag: " + formatter.format(kreditbetrag));
-        System.out.print("\n  Zinssatz: " + zinssatz + " %");
-        System.out.print("\n  Laufzeit: "+ kredit_laufzeit);
-        
-        System.out.print("\n  Jahr\t\tAnfangskapital\tZinsen\tTilgung\tAnnuitaet\tRestkapital");
+        System.out.print("\nKreditbetrag: " + formatter.format(kreditbetrag));
+        System.out.print("\nZinssatz: " + zinssatz + " %");
+        System.out.print("\nLaufzeit: "+ kredit_laufzeit);
+        System.out.println(" ");
+        System.out.print("\nJahr\t\tAnfangskapital\tZinsen\tTilgung\tAnnuitaet\tRestkapital");
 
         anfangskapital = kreditbetrag;
 
@@ -71,10 +75,10 @@ public class AbzahlungsDarlehen {
 
     public void ausgabe()
     {   
-        System.out.print("\n ");
-        System.out.print("\n  Summe Zinsen: " + zinsen);
-        System.out.print("\n  Summe Tilgung: " + tilgung);
-        System.out.print("\n  Summe Annuitaet: " + annuitaet);
+        System.out.println(" ");
+        System.out.print("\nSumme Zinsen: " + zinsen);
+        System.out.print("\nSumme Tilgung: " + tilgung);
+        System.out.print("\nSumme Annuitaet: " + annuitaet);
 
     }
 
