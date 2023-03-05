@@ -17,7 +17,7 @@ public class TeilbarkeitProgramm{
                 divisors[i] = i;
             }
         }
-        return divisors[];
+        return null;
         
     }
     public boolean teilbarkeit(int zahl, int divisor){
@@ -30,7 +30,7 @@ public class TeilbarkeitProgramm{
         System.out.print("Teiler: ");
         divisor = sc.nextInt();
 
-        divisorZahllen = new int[zahl];
+        
     }
     
 
@@ -41,9 +41,7 @@ public class TeilbarkeitProgramm{
             System.out.print(zahl + " ist durch "+ divisor + " nicht glatt teilbar.");
             System.out.print("");
             for (int i = 0; i < zahl; i++) {
-                if (divisorZahllen[i] != 0) {
-                    System.out.print(divisorZahllen[i] + " ");
-                }
+                
             }
         }
 
