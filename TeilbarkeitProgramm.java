@@ -2,20 +2,22 @@ import java.util.*;
 
 public class TeilbarkeitProgramm{
 
+    
     static Scanner sc = new Scanner(System.in);
     int zahl;
     int divisor;
     
+    
 
     public int[] teilbarkeit(int zahl) {
         
-        
-        for (int i = 1; i <= zahl; i++) {
+        int[] divisors = new int[zahl];
+        for (int i = 1; i < zahl; i++) {
             if (zahl % i == 0) {
-                
+                divisors[i] = i;
             }
         }
-        return null;
+        return divisors[];
         
     }
     public boolean teilbarkeit(int zahl, int divisor){
@@ -27,6 +29,8 @@ public class TeilbarkeitProgramm{
         zahl = sc.nextInt();
         System.out.print("Teiler: ");
         divisor = sc.nextInt();
+
+        divisorZahllen = new int[zahl];
     }
     
 
@@ -35,8 +39,11 @@ public class TeilbarkeitProgramm{
             System.out.print("Testergebnis:" +zahl + " ist durch " + divisor + " glatt teilbar.");
         }else{
             System.out.print(zahl + " ist durch "+ divisor + " nicht glatt teilbar.");
+            System.out.print("");
             for (int i = 0; i < zahl; i++) {
-                
+                if (divisorZahllen[i] != 0) {
+                    System.out.print(divisorZahllen[i] + " ");
+                }
             }
         }
 
