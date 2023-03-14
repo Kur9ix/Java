@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
 const github = document.getElementById('github-button');
 const showbutton = document.getElementById('show-button');
@@ -15,4 +16,6 @@ showbutton.addEventListener('click', function(){
     }
 });
 });
+=======
+>>>>>>> 9197a51f469af01d2d48bf4f4d990f72a7f16ffe
 
