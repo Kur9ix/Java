@@ -42,3 +42,35 @@ body{
     border-color: white;
     
 }
+#light1{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 20%;
+    
+    height: 1px;
+    width: 1px;
+    border: 10px #0ff solid;
+    box-shadow: 0 0 5px #fff,0 0 10px #fff, 0 0  20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff;
+}
+#light2{
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 35%;
+
+    height: 1px;
+    width: 1px;
+    border: 10px #0ff solid;
+    box-shadow: 0 0 5px #fff,0 0 10px #fff, 0 0  20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff;
+}
+#light3{
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 90%;
+
+    height: 1px;
+    width: 1px;
+    border: 10px #0ff solid;
+    box-shadow: 0 0 5px #fff,0 0 10px #fff, 0 0  20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff;
+}
+
+
